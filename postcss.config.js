@@ -1,4 +1,3 @@
-const plugin = require('tailwindcss');
 const tailwindcss = require('tailwindcss');
 
 module.exports = {
