@@ -527,6 +527,10 @@ video {
     max-width: 1536px;
   }
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -576,6 +580,13 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.text-center {
+  text-align: center;
+}
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 .text-sm {
   font-size: 0.875rem;
