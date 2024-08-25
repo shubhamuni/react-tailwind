@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ImageCard from "./Components/ImageCard";
+import ImageSearch from "./Components/ImageSearch";
 function App() {
   const [images, setImage] = useState([]);
   const [isLoading, setIsloading] = useState(true);
@@ -11,9 +12,10 @@ function App() {
         setIsloading(false);
       }, 1000);
     }).catch(error => console.log(error))
-  },[]);
+  },[term]);
   return (
     <div className="container auto">
+    <ImageSearch searchText={(text)=> setTerm(text)}/>
       {isLoading ? (
         <h1 className="text-6xl text-center mx-auto my-10">Loading...</h1>
       ) : (
