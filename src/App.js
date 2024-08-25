@@ -16,10 +16,11 @@ function App() {
   return (
     <div className="container auto">
     <ImageSearch searchText={(text)=> setTerm(text)}/>
+    {!isLoading && images.length === 0 && <h1 className="text-5xl text-center mx-auto mt-40">Images not found</h1>}
       {isLoading ? (
-        <h1 className="text-6xl text-center mx-auto my-10">Loading...</h1>
+        <h1 className="text-6xl text-center mx-auto mt-32">Loading...</h1>
       ) : (
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-3 gap-4 mx-48">
           {images.map((image) => (
             <ImageCard key={image.id} image={image} />
           ))}
