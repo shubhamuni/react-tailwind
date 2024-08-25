@@ -26,7 +26,7 @@ const ImageCard = ({ image }) => {
       </div>
       <div className="px-6 py-4">
         {tags.map((tag, index) => (
-            <span key={index} className="inline-block bg-gray-200 rounded-full px-3 text-sm font-semibold text-gray-700 mr-2 py-7">#{tag}</span>
+            <span key={index} className="inline-block bg-gray-200 rounded-full px-3 text-sm font-semibold text-gray-700 mr-2 py-1">#{tag}</span>
         ))}
         
       </div>
